@@ -1,45 +1,11 @@
-/*Background*/
-.content{    
-    background-color: dodgerblue;
+.content{  
+    margin: 20px;
+    background-color: lightgray;
+    padding: 10px 20px;
 }
 
-.imgarea{
-    background-image: url(../html/html.png);
-    width: 400px;
-    height: 200px;
+/* Another way to set margin. so you can set coustom margin for each side
+.content{
+    margin: top right bottom left;
 }
-
-/* .reback{
-    width: 100%;
-    height: 500px;
-    background-image: url(./star.png);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-attachment: scroll;
-} */
-
-.reback{ /*Shorthand property*/
-    background: url(./star.png) no-repeat right top;
-    height: 400px;
-}
-
-/*Border*/
-
-.bord1 p{
-    border: dotted;
-}
-
-.bord2 p{
-    border: dashed;
-}
-
-.bord3 p{
-    border: solid blue;
-    border-width: 2px;
-    border-right: solid red;
-}
-
-.bord4{
-    border: 1px solid black;
-    border-radius: 5px;
-}
+*/
