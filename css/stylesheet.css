@@ -1,0 +1,20 @@
+/* Type of selectors*/
+
+*{ /* Universal selector it selects all the html elements.*/
+    text-align: center;    
+}
+
+p{  /*Element selector  and grouping selector*/  
+    color: red;
+}
+
+#para1{   /* Id selector*/
+    color: blue;
+}
+
+.own{  /*Class selector*/
+    font-size: 20px;
+}
+
+
+
