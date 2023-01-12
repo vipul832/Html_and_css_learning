@@ -10,27 +10,140 @@
 </head>
 <body>
 
-    <div class="dlink">
-        <a href="#" class="btn nor">Link</a>
-        <a href="#" class="btn hov">Link</a>
-        <a href="#" class="btn bor">Link</a>
-        <a href="#" class="btn col">Link</a>
+    <h1>Display property</h1>
+
+    <p>Display specifies how an elements is displayed.</p>
+
+    <div id="dn">
+        <h3>display none</h3>
+        <p>Hello</p>
+        <p>world</p>
+        <p>css</p>
+        <button onclick="document.getElementById('dn').style.display='none'"> Display none</button>
     </div>
+    <div class="dinline">
+        <h3>display inline</h3>
+        <p>Hello</p>
+        <p>world</p>
+        <p>css</p>
+    </div>
+    <div class="dblock">
+        <h3>display block</h3>
+        <p>Hello</p>
+        <p>world</p>
+        <p>css</p>
+    </div>
+    <div class="dinline-block">
+        <h3>display inline-block</h3>
+        <p>Hello</p>
+        <p>world</p>
+        <p>css</p>
+    </div>
+    <div class="dlist-item">
+        <h3>display list-item</h3>
+        <p>Hello</p>
+        <p>world</p>
+        <p>css</p>
+    </div>
+    <div class="dflex">
+        <h3>display flex</h3>
+        <p>Hello</p>
+        <p>world</p>
+        <p>css</p>
+    </div>
+    <div class="dinline-flex">
+        <h3>display inline-flex</h3>
+        <p>Hello</p>
+        <p>world</p>
+        <p>css</p>
+    </div>
+
+    <h3>Max - width</h3>
+
+    <p class="wid">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aliquid!
+    </p>
+
+    <p class="maxwid">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, aliquid!
+    </p>
+
+    <h3>Position</h3>
+    <ul>
+        <li>static</li>
+        <li>relative</li>
+        <li>fixed</li>
+        <li>absolute</li>
+        <li>sticky</li>
+    </ul>
+
+    <div class="ps"> <!--Static positioned are not affected by top,bottom,left and right-->
+        <h4>position static</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo.</p>
+    </div>
+    <div class="pr">  <!--It normal position but your can use top,lef,bottom and right-->
+        <h4>position relative</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo.</p>
+    </div>
+    <div class="pf"> <!--element will be at fixed position-->
+        <h4>position fixed</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo.</p>
+    </div>
+    <div class="pa">   
+        <h4>position absolute</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, nemo.</p>
+    </div>
+    <div class="psticky"> <!--stay at fixed position when user scroll-->
+        <h4>position sticky</h4>
+    </div>
+
+
+    <h3>z-index property</h3>
+
+        <p>Specifies the stack order of any element place in front or behind , the other</p>
+
+    <div class="zprop">
+        <p class="s1"></p>
+        <p class="s2"></p>
+        <p class="s3"></p>
+    </div>
+
+
+    <h3>overflow property</h3>
+
+    <p>Specifies whether to clip the content or to add scrollbars when the content of an elements is to big to fit in the specified area</p>
+    <div class="oflow">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis minima officiis non inventore atque quibusdam molestias laudantium dicta modi. Aspernatur delectus sequi provident minus nihil.</p>
+    </div>
+
+
+    <h3>Float</h3>
+    <p>specifies how an element should float</p>
+
+    <div class="fl">
+        <figure>
+            <img src="./star.png" alt="Star" width="50px" height="50px">
+        </figure>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi ad laudantium, inventore quaerat sint adipisci molestiae eos. Nesciunt nobis quisquam enim rem eveniet. Magnam quae itaque eum fugiat temporibus?</p>
+        <h3>This another content</h3>
+    </div>
+
+
+
+    <h3>Inline-block</h3>
+
+    <p> Major difference between display:inline and display:inline-block is the it's allows to set a width and height on the elemnet in display: inline-block</p>
+
+    <span class="ainline"> Home</span> <!--Here can't change hight and width-->
+    <span class="ainline-block"> Home</span>    <!--Here you can-->
+
+
+    <h3>Align</h3>
+    <div class="align-element">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, architecto.</p>
+    </div>
+
     
-    <div>
-        <h2>Lists</h2>
-        <h3>Unordered list</h3>
-        <ul class="a">  
-            <li>Car</li>
-            <li>Bike</li>
-            <li>Bus</li>
-        </ul>
-        <h3> ordered list</h3>
-        <ol class="b">
-            <li>Car</li>
-            <li>Bike</li>
-            <li>Bus</li>
-        </ul>
-    </div>
+
 </body>
 </html>
