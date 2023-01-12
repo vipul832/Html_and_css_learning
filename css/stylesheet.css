@@ -1,204 +1,26 @@
-/*dispaly property*/
+/*Combinators*/
 
-body{
-   height: 300vh;
+/* 1 descendant selector*/
+
+div p{
+    background-color: rgb(250, 158, 158);
+    color: white;
 }
 
-.dinline{
-    display: inline;
-}
-
-.dblock{
-    display: block;
-}
-
-.dinline-block{
-    display: inline-block;
-}
-
-.dlist-item{
-    display: list-item;
-}
-
-.dflex{
-    display: flex;
-}
-
-.dflex p{
-    padding: 10px;
-}
-
-.dinline-flex{
-    display: inline-flex;
-}
-
-.dinline-flex p{
-    padding: 10px;
-}
-
-/*Max width*/
-
-.wid{
-    width: 500px;
-    border: 2px solid green;
-}
-.maxwid{   /*It more responsive*/
-    max-width: 500px;
-    border: 2px solid green;
-}
-
-/*Position*/
-
-.ps{
-    position: static;
-    border: solid 1px black;
-    padding-left: 10px;
-    margin: 10px;
-}
-
-.pr{
-    position: relative;
-    border: solid 1px black;
-    padding-left: 10px;
-    margin: 10px;
-}
-.pf{
-    position:static;
-    border: solid 1px black;
-    padding-left: 10px;
-    margin: 10px;
-}
-
-.pf h4{
-    position: fixed;
-    top: 0;
-    right:20px;
-}
-.pa{
-    position: relative;
-    border: solid 1px black;
-    padding-left: 10px;
-    margin: 10px;
-}
-
-.pa h4{
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-.psticky{
-    position: sticky;
-    border: solid 1px black;
-    padding-left: 10px;
-    margin: 10px;
-    top: 0;
-}
-
-/*Z-index property*/    
-
-.zprop{
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border: 2px solid black;
-}
-
-.s1{
-    position: absolute;
-    z-index: 1;
-    width: 100px;
-    height: 100px;
-    background-color: red;
-}
-.s2{
-    position: absolute;
-    z-index:2;
-    left: 20px;
-    width: 100px;
-    height: 100px;
-    background-color: blue;
-}
-.s3{
-    position: absolute;
-    z-index: 3;
-    left: 30px;
-    width: 100px;
-    height: 100px;
-    background-color: black;
-}
-
-
-
-/*Overflow*/
-
-.oflow{
-    width: 200px;
-    height: 100px;
-    background-color: dodgerblue;
-
-    overflow: visible; /* if your conent is geting out from the block it will display*/
-    /* overflow: hidden;*/ /* In hidden will not display the content out side of block*/
-    overflow-y: scroll;
-
-}
-
-
-/*Float*/
-
-.fl{
-    border: 1px solid black;
-    width: 400px;
-    box-sizing: border-box;
-    margin: auto;
-}
-.fl p{
-    border: 1px solid blue;
-    float: left;
-    width: 45%;
-    background-color: lightcoral;
-}
-
-figure{
-    float: right;
-    border: 1px solid yellow;
-    width: 30%;
-    background-color: tomato;
-}
-
-.fl h3{
-    clear: left;
-    background-color: lightgreen;
-}
-
-/*inline-block*/
-
-.ainline{
-    display: inline;
-    width: 500px;
+/* 2 child selector*/
+ div > p{
     background-color: yellowgreen;
-    height: 20px;
-    padding: 10px;
-}
+    color: white;
+ }
 
-.ainline-block{
-    display: inline-block;
-    width: 500px;
-    height: 20px;
-    background-color: orangered;
-    color:white;
-    text-align: center;
-    padding: 10px;
-}
+ /* 3 Adjacent sibling selector*/
 
-/* Align*/
+ div + p{
+    background-color:hotpink;
+ }
 
-.align-element{
-    border: 2px solid orange;
-    margin: auto;
-    text-align: center;
-    width: 40%;
-}
+ /* 4 General Sibling Selector*/
 
-.align-element p{
-    line-height: 20px;
-}
+ div ~ p{
+    background-color: lightsalmon;
+ }
