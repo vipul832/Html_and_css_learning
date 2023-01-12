@@ -1,68 +1,29 @@
-/*Gradient*/
+/*CSS Media Type*/
 
-.grade{
-   position: relative;
-   margin: auto;
-   width: 50%;
-   height: 200px;
-   border: 1px solid black;
-   background-image: linear-gradient(140deg,red,yellow);
-   margin-bottom: 10px;
-   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
+*{
+   box-sizing: border-box;
 }
 
-.grade p{
-   position: absolute;
-   top: 40%;
-   left: 20%;
+
+
+li{
+   list-style-type: none;
+   display: inline-block;
+   background-color: dodgerblue;
+   padding: 10px;
+   width: 200px;
+   margin: 40px;
    text-align: center;
-   font-size: 25px;
-   letter-spacing: 2px;
-   padding: 0;
-   margin: 0;
-   color: white;
-}
-.grade2{
-   position: relative;
-   margin: auto;
-   width: 50%;
-   height: 200px;
-   border: 1px solid black;
-   background-image: radial-gradient(circle,red,yellow);
-   margin-bottom: 10px;
-   box-shadow: 5px 5px 0 blue inset;
 }
 
-.grade2 p{
-   position: absolute;
-   top: 40%;
-   left: 20%;
-   text-align: center;
-   font-size: 25px;
-   letter-spacing: 2px;
-   padding: 0;
-   margin: 0;
-   color: white;
-}
-.grade3{
-   position: relative;
-   margin: auto;
-   width: 50%;
-   height: 200px;
-   border: 1px solid black;
-   background-image: conic-gradient(red,yellow);
-   margin-bottom: 10px;
-   box-shadow: 10px 10px 0 blue;
+li a{
+   text-decoration: none;
+   padding: 20px;
 }
 
-.grade3 p{
-   position: absolute;
-   top: 40%;
-   left: 20%;
-   text-align: center;
-   font-size: 25px;
-   letter-spacing: 2px;
-   padding: 0;
-   margin: 0;
-   color: white;
+@media screen and (max-with:500px){
+   li{
+      display: block;
+      width: 100%;
+   }   
 }
