@@ -1,18 +1,68 @@
-/*Box sizing property*/
+/*Gradient*/
 
-.demo{
-   width: 300px;
-   height: 100px;
-   padding: 50px;
-   border: 1px solid blue;
-   margin: 10px;
-}
-.demo2{
-   width: 300px;
-   height: 100px;
-   padding: 10px;
-   border: 1px solid red;
-   box-sizing: border-box;
+.grade{
+   position: relative;
+   margin: auto;
+   width: 50%;
+   height: 200px;
+   border: 1px solid black;
+   background-image: linear-gradient(140deg,red,yellow);
+   margin-bottom: 10px;
+   box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
 
+.grade p{
+   position: absolute;
+   top: 40%;
+   left: 20%;
+   text-align: center;
+   font-size: 25px;
+   letter-spacing: 2px;
+   padding: 0;
+   margin: 0;
+   color: white;
+}
+.grade2{
+   position: relative;
+   margin: auto;
+   width: 50%;
+   height: 200px;
+   border: 1px solid black;
+   background-image: radial-gradient(circle,red,yellow);
+   margin-bottom: 10px;
+   box-shadow: 5px 5px 0 blue inset;
+}
 
+.grade2 p{
+   position: absolute;
+   top: 40%;
+   left: 20%;
+   text-align: center;
+   font-size: 25px;
+   letter-spacing: 2px;
+   padding: 0;
+   margin: 0;
+   color: white;
+}
+.grade3{
+   position: relative;
+   margin: auto;
+   width: 50%;
+   height: 200px;
+   border: 1px solid black;
+   background-image: conic-gradient(red,yellow);
+   margin-bottom: 10px;
+   box-shadow: 10px 10px 0 blue;
+}
+
+.grade3 p{
+   position: absolute;
+   top: 40%;
+   left: 20%;
+   text-align: center;
+   font-size: 25px;
+   letter-spacing: 2px;
+   padding: 0;
+   margin: 0;
+   color: white;
+}
