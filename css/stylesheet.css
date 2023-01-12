@@ -1,37 +1,18 @@
-/*CSS Form*/
+/*Box sizing property*/
 
-
-form{
-   background-color: lightgray;
-   margin: auto;
+.demo{
+   width: 300px;
+   height: 100px;
+   padding: 50px;
+   border: 1px solid blue;
+   margin: 10px;
+}
+.demo2{
+   width: 300px;
+   height: 100px;
    padding: 10px;
-   width: 500px;
-   text-align: center;
-   border: dotted black;
-}
-
-input[type=text]{
-   width: 50%;
-   padding: 10px;
-   border: none;
-   outline: none;
-   border-bottom: 2px solid gray;
+   border: 1px solid red;
+   box-sizing: border-box;
 }
 
 
-select{
-   width:50%;
-   padding: 10px;
-   font-size: 15px;
-   text-align: center;
-}
-
-.btn{
-  background-color: lightgreen;
-  padding: 10px;
-  width: 50%;
-  font-size: 15px;
-  font-weight: 700;
-  border: none;
-  border-radius: 5px;
-}

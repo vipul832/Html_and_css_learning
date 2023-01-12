@@ -10,27 +10,19 @@
 </head>
 <body>
     <header>
-        <h1>CSS Form</h1>
+        <h1>CSS Box Sizing</h1>
     </header>
    
-    <form action="">
+        <div>
+            <p>It allows us to include the padding and border in an elements total width and height</p>
+        </div>
 
-        <label for="fname"> First Name</label><br><br>
-        <input type="text" class="fname" id="fname" placeholder="Your First Name"><br><br>
+        <div class="demo">
+            <p> Here size of div will increase because we adding the padding+width+border=total width of block</p>
+        </div>
+        <div class="demo2">
+            <p> Here we can add padding and maring withing the specified width and height so you can se the difference between these tow box</p>
+        </div>
 
-        <label for="lname"> Last Name</label><br><br>
-        <input type="text" class="lname" id="lname" placeholder="Your Last Name"><br><br>
-        
-        <label for="country" class="country" id="country">Country</label><br><br>
-        <select>
-            <option value="India"> India</option>
-            <option value="Australia"> Australia</option>
-            <option value="U.S.A"> U.S.A</option>
-        </select>
-
-        <br><br><button class="btn" id="btn">submit</button>
-
-    </form>
-   
 </body>
 </html>
