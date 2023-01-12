@@ -1,26 +1,42 @@
-/*Combinators*/
+/* pseudo-classes*/
 
-/* 1 descendant selector*/
 
-div p{
-    background-color: rgb(250, 158, 158);
-    color: white;
+div a{
+   background-color: lightgreen;
+   padding: 10px;
+   width: auto;
 }
 
-/* 2 child selector*/
- div > p{
-    background-color: yellowgreen;
-    color: white;
- }
+a:hover{
+   color: white;
+   background-color: rgb(248, 60, 60);
+   text-decoration: none;
+}
 
- /* 3 Adjacent sibling selector*/
+.test p:first-child{
+   background-color: yellow;
+}
 
- div + p{
-    background-color:hotpink;
- }
+.test p:nth-child(even){
+   background-color: green;
+}
 
- /* 4 General Sibling Selector*/
+/* pseudo-elements*/
 
- div ~ p{
-    background-color: lightsalmon;
- }
+.test1{
+   width: 200px;
+   margin: auto;
+}
+
+.test1 p::first-letter{
+   font-size: 30px;
+}
+
+.test1 p::first-line{
+   background-color: cyan;
+}
+
+.test1 p::selection{
+   color: white;
+   background: black;
+}
