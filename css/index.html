@@ -10,21 +10,27 @@
 </head>
 <body>
     <header>
-        <h1>CSS Attribute selectors</h1>
+        <h1>CSS Form</h1>
     </header>
+   
+    <form action="">
+
+        <label for="fname"> First Name</label><br><br>
+        <input type="text" class="fname" id="fname" placeholder="Your First Name"><br><br>
+
+        <label for="lname"> Last Name</label><br><br>
+        <input type="text" class="lname" id="lname" placeholder="Your Last Name"><br><br>
         
-    <div>
-        <p>It style html elements that have specific attributes or attributes values</p>
-    </div>
-     
-    <p class="color"> Hello</p>
-    <p> Hello</p>
-    <p class="color"> Hello</p>
-    <p> Hello</p>
-    <p class="color"> Hello</p>
-      
+        <label for="country" class="country" id="country">Country</label><br><br>
+        <select>
+            <option value="India"> India</option>
+            <option value="Australia"> Australia</option>
+            <option value="U.S.A"> U.S.A</option>
+        </select>
 
-    
+        <br><br><button class="btn" id="btn">submit</button>
 
+    </form>
+   
 </body>
 </html>
