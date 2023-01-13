@@ -1,40 +1,30 @@
-/*CSS Flexbox*/
+/*CSS Grid*/
 
-
-.content{
-   display: flex;
+*{
+   box-sizing: border-box;
 }
 
-.content div{
-   border: 1px solid black;
+.grid-demo{
+   display: grid;
+   grid-template-columns:100px 200px;
+   grid-template-rows: 50px;
+   /*
+   grid-auto-rows:minmax(150px,auto);
+   */
+   background-color: lightblue;
+   gap: 10px;
+
+   grid-template-areas: 
+      "header header"
+      "sidebar content"  
+      ;
+}
+
+.grid-demo div{
+   background-color:red;
    padding: 10px;
-   margin: 10px; 
 }
 
-.content .box1{
-   order: 2;
-   flex-shrink: 0;
-}
-.content .box2{
-   order: 1;
-
-}
-.content.box3{
-   order: 3;
-   flex-grow: 1;
-}
-
-
-.content2{
-   display: flex;
-   flex-wrap: wrap;
-   flex-basis: 15%;
-}
-
-.content2 div{
-   border: 1px solid black;
-   margin: 5px;
-   padding: 5px;
-   width: 200px;
-   height: 150px;
+.grid-item-1{
+   grid-area: header;;
 }
